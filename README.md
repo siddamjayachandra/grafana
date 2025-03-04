@@ -21,16 +21,16 @@
 
 10. In the menu bar go to dashboards and create a new dashboard. Select the add visualization. It asks for the data source selcet the prometheus.
 
-11. Now write the query in the query inspector. Select code to write the query and paste this query for cpu usage "100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)".
+11. Now write the query in the query inspector. Select code to write the query. If you want to see the cpu usage paste this query "100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)".
 
-12. Add query and write for the memeory usage as "node_memory_Active_bytes / node_memory_MemTotal_bytes * 100".
+12. Add query and if you want to write the query for the memeory usage, use this code for memory "node_memory_Active_bytes / node_memory_MemTotal_bytes * 100".
 
 13. Run the qureies and now observe the dash board you can see the graph representing the usages of memory and cpu.
 
 14. If you want to manually test the usgae of cpu and memoery install the stress-ng. And run stress on cpu and memory.
 commands are "stress-ng --vm 4 --vm-bytes 1G --timeout 60s" and "stress-ng --cpu 0 --cpu-method matrixprod". You can replace the number of cpu and vm you want.
 
-15. After running these commands and when you run the query in the grafana dashboard. The graph show the usages.
+15. After running these commands and when you run the query in the grafana dashboard. The graph show the usages of cpu and memory.
 
 16. This is my output of the grafana dashboard.
 
