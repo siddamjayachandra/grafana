@@ -34,6 +34,7 @@ commands are "stress-ng --vm 4 --vm-bytes 1G --timeout 60s" and "stress-ng --cpu
 
 16. This is my output of the grafana dashboard.
 
-![image](https://github.com/user-attachments/assets/a427955f-84b1-487e-86e7-8a166a2a18c9)
+![image](https://github.com/user-attachments/assets/86d10e30-efff-4a17-bf3f-80c18315424d)
+
 
  
